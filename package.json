@@ -1,0 +1,25 @@
+{
+  "name": "@atlc/hibp",
+  "version": "1.0.0",
+  "description": "Compare your password to the HaveIBeenPwned password API to check for matches in breaches. Requires 0 exteral modules. Returns a promise that resolves with an 'isPwned' status and the amount of breaches detected, if any.",
+  "main": "index.js",
+  "keywords": [
+    "have i been pwned",
+    "hibp",
+    "password",
+    "validation"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/atlc/hibp-password-validator.git"
+  },
+  "author": "https://github.com/atlc/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atlc/hibp-password-validator/issues"
+  },
+  "homepage": "https://github.com/atlc/hibp-password-validator#readme"
+}
