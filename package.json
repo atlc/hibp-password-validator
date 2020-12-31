@@ -1,6 +1,6 @@
 {
   "name": "@atlc/hibp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Compare your password to the HaveIBeenPwned password API to check for matches in breaches. Requires 0 exteral modules. Returns a promise that resolves with an 'isPwned' status and the amount of breaches detected, if any.",
   "main": "index.js",
   "keywords": [
