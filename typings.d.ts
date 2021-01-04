@@ -12,5 +12,4 @@ export type BreachDetails = {
  * console.log(test);   // { isPwned: true, breaches: 17491 }
  * ```
  */
-export function validate(password: string): Promise<BreachDetails | any>;
-// Error objects are UNFORTUNATELY implicitly `any`, so hopefully this wraps up typings.
+export function validate(password: string): Promise<BreachDetails | string>;
