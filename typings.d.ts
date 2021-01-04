@@ -12,4 +12,5 @@ export type BreachDetails = {
  * console.log(test);   // { isPwned: true, breaches: 17491 }
  * ```
  */
-export function validate(password: string): Promise<BreachDetails | string>;
+export function validate(password: string): Promise<BreachDetails> | any;
+// Promise.reject errors are by default 'any'
