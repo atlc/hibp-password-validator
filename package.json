@@ -3,11 +3,15 @@
   "version": "1.0.3",
   "description": "Compare your password to the HaveIBeenPwned password API to check for matches in breaches. Requires 0 exteral modules. Returns a promise that resolves with an 'isPwned' status and the amount of breaches detected, if any.",
   "main": "index.js",
+  "typings": "typings.d.ts",
   "keywords": [
     "have i been pwned",
     "hibp",
+    "haveibeenpwned",
     "password",
-    "validation"
+    "validation",
+    "password validation",
+    "security"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

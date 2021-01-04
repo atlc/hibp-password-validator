@@ -11,7 +11,8 @@ const validate = (password) => {
 
         // Pass the API the first 5 characters of the resulting hash, and it returns a list of 
         // ALL hashes that begin with those 5 characters, with those characters truncated
-        const req = https.get(`https://api.pwnedpasswords.com/range/${hashedPass.slice(0, 5)}`, async (res) => {
+        https.get(`https://api.pwnedpasswords.com/range/${hashedPass.slice(0, 5)}`, async (res) => {
+            // If there's an API error, reject with the API's status code
             if (res.statusCode >= 300 || res.statusCode < 200) return reject(`Status code: ${res.statusCode}`);
 
             let matchesList = [];
