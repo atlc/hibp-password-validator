@@ -3,4 +3,4 @@ export type BreachDetails = {
     breaches: number;
 }
 
-export function validate(password: string): Promise<BreachDetails | Error>;
+export function validate(password: string): Promise<BreachDetails | PromiseRejectionEvent>;
