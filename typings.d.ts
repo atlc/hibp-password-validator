@@ -1,6 +1,6 @@
-export function validate(password: string): Promise<IBreachDetails | Error>;
-
-export interface IBreachDetails {
+export type BreachDetails = {
     isPwned: boolean;
     breaches: number;
 }
+
+export function validate(password: string): Promise<BreachDetails | Error>;
