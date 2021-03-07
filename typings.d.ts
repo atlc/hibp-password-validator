@@ -15,7 +15,5 @@ declare namespace Validator {
     * console.log(test);   // { isPwned: true, breaches: 17491 }
     * ```
     */
-    export function validate(password: string): Promise<BreachDetails | never>;
-    // Promise.reject errors are by default 'any'
-    // https://github.com/microsoft/TypeScript/issues/6283#issuecomment-240804072
+    export function validate(password: string): Promise<BreachDetails>;
 }

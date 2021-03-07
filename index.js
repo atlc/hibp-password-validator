@@ -36,4 +36,4 @@ const validate = (password) => {
     })
 }
 
-module.exports = validate;
+export default validate;
